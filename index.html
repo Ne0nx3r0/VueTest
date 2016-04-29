@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+
+<script type="text/javascript" src="Scripts/vue/vue.js"></script>
+
+</head>
+<body>
+
+<div id="app">
+  <p>{{ message }}</p>
+  <input v-model="message">
+  <button v-on:click="reverseMessage">Reverse Message</button>
+
+  <ul>
+    <li v-for="todo in todos">
+      {{ todo.text }}
+    </li>
+  </ul>
+</div>
+
+<script type="text/javascript" src="Scripts/app.js"></script>
+
+
+</body>
+</html>
